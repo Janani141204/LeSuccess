@@ -1,0 +1,4 @@
+def s1 = "listen"
+def s2 = "silent"
+def result = s1.toList().sort() == s2.toList().sort()
+println result

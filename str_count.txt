@@ -1,0 +1,7 @@
+def str = "Groovy Programming"
+def count = 1
+str.toLowerCase().each {
+    if (it in ['a', 'e', 'i', 'o', 'u']) 
+    count++
+}
+println count

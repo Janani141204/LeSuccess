@@ -1,0 +1,3 @@
+def str = "madam"
+def isPalin = str == str.reverse()
+println isPalin 
