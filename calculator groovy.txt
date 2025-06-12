@@ -1,0 +1,15 @@
+def calculate(a, b, operation) {
+    return operation(a, b)
+}
+
+// Add
+def add = { x, y -> x + y }
+println "Addition: " + calculate(5, 3, add)
+
+// Subtract
+def subtract = { x, y -> x - y }
+println "Subtraction: " + calculate(5, 3, subtract)
+
+// Multiply
+def multiply = { x, y -> x * y }
+println "Multiplication: " + calculate(5, 3, multiply)

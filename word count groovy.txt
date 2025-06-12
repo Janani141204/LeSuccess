@@ -1,0 +1,11 @@
+def input = "hello world hello"
+def words = input.split(" ")
+def wordCount = [:]
+
+words.each { word ->
+    wordCount[word] = wordCount.get(word, 0) + 1
+}
+
+wordCount.each { word, count ->
+    println "$word → $count"
+}
