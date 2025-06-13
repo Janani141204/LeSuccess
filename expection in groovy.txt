@@ -1,0 +1,12 @@
+try {
+    def result = 10 / 0
+    println "Result: $result"
+    def file = new File("missing.txt")
+    println file.text
+} catch (ArithmeticException e) {
+    println "Division by zero error"
+} catch (FileNotFoundException e) {
+    println "File not found error"
+} finally {
+    println "Finally block executed"
+}

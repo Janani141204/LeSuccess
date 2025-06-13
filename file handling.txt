@@ -1,0 +1,3 @@
+new File("name.txt").withWriter { it.write("Janani Kannan") }
+def name = new File("name.txt").text
+println "Name read from file: $name"

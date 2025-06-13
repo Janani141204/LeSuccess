@@ -1,0 +1,8 @@
+class Demo {
+    def propertyMissing(String name) {
+        "undefined"
+    }
+}
+def obj = new Demo()
+println obj.someProperty
+println obj.another

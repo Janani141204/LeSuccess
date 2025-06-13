@@ -1,0 +1,10 @@
+class Person {}
+def p = new Person()
+
+p.metaClass.name = "Janani"
+p.metaClass.age = 21
+p.metaClass.introduce = { -> println "I am $name and I am $age years old." }
+
+println p.name
+println p.age
+p.introduce()

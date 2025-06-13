@@ -1,0 +1,8 @@
+class Demo {
+    def methodMissing(String name, def args) {
+        println "Method ${name} is not defined"
+    }
+}
+def obj = new Demo()
+obj.hello()
+obj.calculate()
